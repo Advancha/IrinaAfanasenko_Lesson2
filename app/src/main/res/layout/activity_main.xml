@@ -8,52 +8,55 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.afanasenko.lesson2.MainActivity"
-    android:background="#ff0000"
+    android:background="@android:color/holo_red_light"
+    android:weightSum="100"
     android:orientation="horizontal">
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="381dp"
-        android:background="#00fe00"
+        android:layout_width="@dimen/null__width"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_green_light"
         android:baselineAligned="false"
         android:id="@+id/vertical_code"
-        android:layout_margin="@dimen/layout__margin"
-        android:weightSum="1">
+        android:layout_weight="50">
 
     </LinearLayout>
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="381dp"
-        android:background="#00fe00"
+        android:layout_width="@dimen/null__width"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_green_light"
         android:baselineAligned="false"
         android:id="@+id/vertical_xml"
-        android:layout_margin="@dimen/layout__margin"
-        android:weightSum="1">
+        android:layout_weight="50"
+        android:weightSum="100">
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/Button1"
-            android:layout_margin="@dimen/button__margin"
             android:text="@string/some_text"
             android:background="@color/colorWhite"
-            android:drawableLeft="@drawable/ic_launcher_button" />
+            android:drawableLeft="@drawable/ic_launcher_button"
+            android:layout_margin="@dimen/button__margin"
+            />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/Button2"
-            android:layout_margin="@dimen/button__margin"
             android:text="@string/some_text"
             android:background="@color/colorWhite"
-            android:drawableLeft="@drawable/ic_launcher_button" />
+            android:drawableLeft="@drawable/ic_launcher_button"
+            android:layout_margin="@dimen/button__margin"
+            />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/Button3"
-            android:layout_margin="@dimen/button__margin"
             android:text="@string/some_text"
             android:background="@color/colorWhite"
-            android:drawableLeft="@drawable/ic_launcher_button" />
+            android:drawableLeft="@drawable/ic_launcher_button"
+            android:layout_margin="@dimen/button__margin"
+            />
     </LinearLayout>
 </LinearLayout>
